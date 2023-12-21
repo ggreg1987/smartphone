@@ -21,6 +21,8 @@ namespace smartphone.domain.models
             this._memory = memory;
         }
 
+        public abstract void AppInstall(string name);
+
         public void SetModel(string model) 
         {
             this._model = model;
@@ -38,7 +40,7 @@ namespace smartphone.domain.models
 
         public string? GetImei()
         {
-            return this._imei
+            return this._imei;
         }
 
           public void SetMemory(int memory) 
