@@ -16,7 +16,7 @@ namespace smartphone.domain.models
 
         public override string? AppInstall(string name)
         {
-            return $"Installing the App {name}";
+            return $"Installing a Nokia App {name}";
         }
     }
 }
