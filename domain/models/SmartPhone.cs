@@ -8,9 +8,9 @@ namespace smartphone.domain.models
     public abstract class SmartPhone
     {
         public string? Number { get; set; }
-        private string? _model;
-        private string? _imei;
-        private int _memory;
+        protected string? _model;
+        protected string? _imei;
+        protected int _memory;
 
         public SmartPhone() {}
 
@@ -21,7 +21,7 @@ namespace smartphone.domain.models
             this._memory = memory;
         }
 
-        public abstract void AppInstall(string name);
+        public abstract string? AppInstall(string name);
 
         public void SetModel(string model) 
         {
