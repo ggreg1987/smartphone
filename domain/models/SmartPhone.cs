@@ -23,6 +23,16 @@ namespace smartphone.domain.models
 
         public abstract string? AppInstall(string name);
 
+        public static string? Connect()
+        {
+            return "Calling...";
+        }
+
+        public static string? Desconnect() 
+        {
+            return "Desconnecting...";
+        }
+
         public void SetModel(string model) 
         {
             this._model = model;
