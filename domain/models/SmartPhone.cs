@@ -23,12 +23,12 @@ namespace smartphone.domain.models
 
         public abstract string? AppInstall(string name);
 
-        public static string? Connect()
+        public string? Connect()
         {
             return "Calling...";
         }
 
-        public static string? Desconnect() 
+        public string? Desconnect() 
         {
             return "Desconnecting...";
         }
